@@ -6,8 +6,9 @@ html {
   padding: 0;
 }
 body {
-  background-color: #ddd;
-  background-image: url(../img/alum.png);
+  /* background-color: #ddd; */
+  /* background-image: url(../img/alum.png); */
+  background-color: #ccc;
 }
 ::-moz-selection {
   background: transparent;
@@ -22,24 +23,25 @@ body {
   background-image: url(../img/alum-night.png);
 }
 #main {
-  width: 1231px;
+  width: 1500px;
   margin: 0 auto;
   position: relative;
 }
 #keyboard {
-  width: 1215px;
+  width: 1500px;
   height: 540px;
   padding: 75px 0 0 16px;
   margin: 0;
   background-repeat: no-repeat;
   background-position: 0 -220px;
+  background-color: #ccc;
   list-style-type: none;
   z-index: 5;
   position: relative;
 }
 @font-face {
   font-family: keyboard;
-  src: url('../fonts/keyboard.otf') format('opentype');
+  src: url("../fonts/keyboard.otf") format("opentype");
 }
 li,
 .key {
@@ -51,7 +53,7 @@ li,
   float: left;
   position: relative;
   margin: 0 12px 12px 0;
-  background-color: #000;
+  background-color: #aaa;
   color: #fff;
   text-align: center;
   font-family: keyboard, "Arial Rounded", Helvetica, Arial, sans-serif;
@@ -66,17 +68,16 @@ li:active,
 }
 .night li,
 .night .key {
-  box-shadow:   0    1px 0   rgba(255, 255, 255, .6),
-                0    1px 4px rgba(255, 255, 255, .3);
-  text-shadow:  2px  2px 3px rgba(255, 255, 255, .4),
-               -2px  2px 3px rgba(255, 255, 255, .4),
-                2px -2px 3px rgba(255, 255, 255, .4),
-               -2px -2px 3px rgba(255, 255, 255, .4);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6),
+    0 1px 4px rgba(255, 255, 255, 0.3);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.4),
+    -2px 2px 3px rgba(255, 255, 255, 0.4), 2px -2px 3px rgba(255, 255, 255, 0.4),
+    -2px -2px 3px rgba(255, 255, 255, 0.4);
 }
 .night li:active,
 .night .key:active {
-  box-shadow:   0    0px 0   rgba(255, 255, 255, .6),
-                0    0px 4px rgba(255, 255, 255, .3);
+  box-shadow: 0 0px 0 rgba(255, 255, 255, 0.6),
+    0 0px 4px rgba(255, 255, 255, 0.3);
 }
 ol li span {
   display: block;
@@ -85,7 +86,7 @@ ol li span {
 }
 .special {
   height: 53px;
-  padding-top: 16px;
+  padding-bottom: 16px;
   font-size: 16px;
 }
 .special span {
@@ -118,6 +119,13 @@ ol li span {
 .l {
   text-align: left;
 }
+.blank {
+  background-color: #ccc !important;
+  box-shadow: unset;
+}
+#delete {
+  width: 96px;
+}
 #delete {
   width: 96px;
 }
@@ -143,8 +151,12 @@ ol li span {
   font-size: 24px;
   line-height: 44px;
 }
+#ctrl {
+  /* width: 155px; */
+  width: 71px;
+}
 #space {
-  width: 379px;
+  width: 462px;
 }
 .arrow {
   height: 38px;
